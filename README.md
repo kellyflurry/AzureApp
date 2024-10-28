@@ -2,7 +2,7 @@
 - Resource Group Name: cms1321
 2. SQL Database
 - DB name: cms
-- Server: cms.database.windows.net
+- Server: cms123.database.windows.net
 - DB region: us-east
 - Admin login: cmsadmin
 - Admin password: CMS4dmin
@@ -45,8 +45,8 @@ After creation:
 - BLOB_CONTAINER: images
 - BLOB_STORAGE_KEY: jmQGQK2gvsUNOqaPFX3fhTq65Pgf5APX4GmjB4JPFsht6fC3f0ji1B/Bp7WbzGa5TnkzqL+Ry3Wq+AStOURW+Q==
 - BLOB_CONNECTION_STRING: DefaultEndpointsProtocol=https;AccountName=cms1321;AccountKey=jmQGQK2gvsUNOqaPFX3fhTq65Pgf5APX4GmjB4JPFsht6fC3f0ji1B/Bp7WbzGa5TnkzqL+Ry3Wq+AStOURW+Q==;EndpointSuffix=core.windows.net
-- SQL_SERVER: cms123.database.windows.net
-- SQL_DATABASE: cms
+- SQL_SERVER: cms
+- SQL_DATABASE: cms123.database.windows.net
 - SQL_USER_NAME: cmsadmin
 - SQL_PASSWORD: CMS4dmin
 - CLIENT_SECRET: 040cc964-614b-4f6b-8497-346e54b08ecc
