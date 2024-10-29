@@ -1,5 +1,5 @@
 1. Resource Group
-- Resource Group Name: cms1321
+- Resource Group Name: cms
 2. SQL Database
 - DB name: cms
 - Server: cms123.database.windows.net
@@ -21,19 +21,19 @@ Run SQL queries in sql_scripts/ directory after completion, starting from the us
 - Network access: Enable public access from all networks (the default)
 - Create container named "images". Set its access level to Container.
 - From Security + networking > Access keys:
-- Blob Storage key: jmQGQK2gvsUNOqaPFX3fhTq65Pgf5APX4GmjB4JPFsht6fC3f0ji1B/Bp7WbzGa5TnkzqL+Ry3Wq+AStOURW+Q==
-- Blob connection string: DefaultEndpointsProtocol=https;AccountName=cms1321;AccountKey=jmQGQK2gvsUNOqaPFX3fhTq65Pgf5APX4GmjB4JPFsht6fC3f0ji1B/Bp7WbzGa5TnkzqL+Ry3Wq+AStOURW+Q==;EndpointSuffix=core.windows.net
+- Blob Storage key: xR5Gjh49yb94o6o+yY1Cc1cJkOs05HRQvw8rSSd5sTxLD7Vi0E3kSaJUodWLVvXY9ZeMG6Q5nilq+AStsiI9Bw==
+- Blob connection string: DefaultEndpointsProtocol=https;AccountName=cms1321;AccountKey=xR5Gjh49yb94o6o+yY1Cc1cJkOs05HRQvw8rSSd5sTxLD7Vi0E3kSaJUodWLVvXY9ZeMG6Q5nilq+AStsiI9Bw==;EndpointSuffix=core.windows.net
 4. Microsoft Entra ID
 4.1. App Registration
 - Name: cmsEntraID
 - Who can use? "Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)"
 4.2. Secret Creation
 - Secret description: test
-- Secret Key: 2FF8Q~yJk~V.YCe5EHvfvxNey5Areg-fQPhH9baW
-- Client Secret: 7508f11e-8406-4fa9-8c2c-fb634ebc6b77
-- Application (client) ID: 1660e7a3-74ae-4945-aea0-5bd962871c33
+- Secret Key: 16b72f3c-a5d4-4502-bef5-102c0aafb57f
+- Client Secret: rpi8Q~64AfwOADjBNbG7wAZHlemphoBJqfAzIaOO
+- Application (client) ID: 6b75513e-7cb2-491b-aeb0-890c5ce1a415
 
-5. Application
+5. Web App
 - Name: udacitycms.azurewebsites.net
 - Runtime stack: Python 3.10
 - Pricing Plan: Free F1
@@ -43,15 +43,15 @@ After creation:
 - Settings -> Environment variables - Add the following variables (sample values are included, replace them with your values):
 - BLOB_ACCOUNT: cms1321
 - BLOB_CONTAINER: images
-- BLOB_STORAGE_KEY: jmQGQK2gvsUNOqaPFX3fhTq65Pgf5APX4GmjB4JPFsht6fC3f0ji1B/Bp7WbzGa5TnkzqL+Ry3Wq+AStOURW+Q==
-- BLOB_CONNECTION_STRING: DefaultEndpointsProtocol=https;AccountName=cms1321;AccountKey=jmQGQK2gvsUNOqaPFX3fhTq65Pgf5APX4GmjB4JPFsht6fC3f0ji1B/Bp7WbzGa5TnkzqL+Ry3Wq+AStOURW+Q==;EndpointSuffix=core.windows.net
-- SQL_SERVER: cms
-- SQL_DATABASE: cms123.database.windows.net
+- BLOB_STORAGE_KEY: xR5Gjh49yb94o6o+yY1Cc1cJkOs05HRQvw8rSSd5sTxLD7Vi0E3kSaJUodWLVvXY9ZeMG6Q5nilq+AStsiI9Bw==
+`- BLOB_CONNECTION_STRING: DefaultEndpointsProtocol=https;AccountName=cms1321;AccountKey=xR5Gjh49yb94o6o+yY1Cc1cJkOs05HRQvw8rSSd5sTxLD7Vi0E3kSaJUodWLVvXY9ZeMG6Q5nilq+AStsiI9Bw==;EndpointSuffix=core.windows.net`
+- SQL_SERVER: cms123.database.windows.net
+- SQL_DATABASE: cms
 - SQL_USER_NAME: cmsadmin
 - SQL_PASSWORD: CMS4dmin
-- CLIENT_SECRET: 040cc964-614b-4f6b-8497-346e54b08ecc
-- SECRET_KEY: 2FF8Q~yJk~V.YCe5EHvfvxNey5Areg-fQPhH9baW
-- CLIENT_ID: fa2635a2-8f54-4bb2-8916-b71ae80065ae
+- CLIENT_SECRET: rpi8Q~64AfwOADjBNbG7wAZHlemphoBJqfAzIaOO
+- SECRET_KEY: 16b72f3c-a5d4-4502-bef5-102c0aafb57f
+- CLIENT_ID: be61c9f1-dd83-466f-8a6c-ee57fe6aaa4b
 Deployment Center
 - Source: GitHub
 - Pick the repo that contains the starter files.
