@@ -51,7 +51,7 @@ After creation:
 - SQL_PASSWORD: CMS4dmin
 - CLIENT_SECRET: rpi8Q~64AfwOADjBNbG7wAZHlemphoBJqfAzIaOO
 - SECRET_KEY: 16b72f3c-a5d4-4502-bef5-102c0aafb57f
-- CLIENT_ID: be61c9f1-dd83-466f-8a6c-ee57fe6aaa4b
+- CLIENT_ID: 6b75513e-7cb2-491b-aeb0-890c5ce1a415
 Deployment Center
 - Source: GitHub
 - Pick the repo that contains the starter files.
