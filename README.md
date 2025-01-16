@@ -14,8 +14,8 @@
 Run SQL queries in sql_scripts/ directory after completion, starting from the users table. Don't forget to take screenshots.
 
 3. Storage Account
-- Resource group: cms1321
-- Storage account name: cms1321 (needs to be unique)
+- Resource group: cms
+- Storage account name: images123 (needs to be unique)
 - Advanced - Allow enabling anonymous access on individual containers: Enable
 - Advanced - Access tier: Cool
 - Network access: Enable public access from all networks (the default)
