@@ -3,7 +3,7 @@
 2. SQL Database
 - DB name: cms
 - Server: cms123.database.windows.net
-- DB region: us-east
+- DB region: (US) Central US
 - Admin login: cmsadmin
 - Admin password: CMS4dmin
 - Resource group: cms
